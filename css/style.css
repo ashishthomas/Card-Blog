@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:100,100i,300,300i,400,400i,600,600i,700,700i');
+
+
+:root{
+  --bg: #001D66;
+  --title: #00257F;
+  --para-text: rgba(0,0,0,0.67);
+  --title-font: 'Josefin Slab', serif;
+  --text-font: 'PT Serif', Serif;
+  --width: 20em;
+}
+body{
+  background: var(--bg);
+  display: grid;
+  place-items: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: var(--title);
+  text-transform: capitalize;
+  font-family: var(--title-font);
+}
+
+section,
+aside,
+article,
+div,
+img{
+  box-sizing: border-box;
+}
+section img{
+  width: 100%;
+}
+section{
+  width: var(--width);
+  background: #fff;
+  padding: 20px;
+}
+section h3{
+  font-size: calc(var(--width)/10);
+}
+section p{
+  font-family: var(--text-font);
+  color: var(--para-text);
+  font-size: calc(var(--width)/20);
+}
+.date{
+  font-size: calc(var(--width)/25);
+}
+h1{
+  color: #fff;
+}
+
+section a{
+  text-decoration: none;
+  color: var(--bg);
+  font-family: var(--title-font);
+  font-weight: 700;
+  font-size: calc(var(--width)/23);
+}
